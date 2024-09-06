@@ -1,0 +1,88 @@
+.output-space-tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+
+}
+.output-group{
+  /* display: flex; */
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.parameters-section {
+ 
+
+  padding: 4px;
+  border-right: 1px solid #ddd;
+ 
+}
+
+.plot-section {
+  flex: 2;
+  padding: 10px;
+}
+
+.select-group, .slider-group, .true-value-selection {
+  margin-bottom: 10px;
+}
+
+.true-value-selection {
+  display: flex;
+  flex-direction: column;
+}
+
+.true-value-selection .checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+
+.slider-group input[type="range"] {
+  width: 100%;
+}
+
+.slider-group {
+  /* Ensures the container can accommodate the vertical slider */
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Set a height to make room for the vertical slider */
+  justify-content: center; /* Centers the slider vertically */
+  align-items: center; /* Centers the slider horizontally */
+}
+
+#trueValueThreshold, #fudgeFactor {
+  /* Rotate the slider vertically */
+  writing-mode: bt-lr; /* For modern browsers */
+  -webkit-appearance: slider-vertical; /* For older WebKit browsers */
+  width: 20px; /* Set a width for the slider */
+  height: 200px; /* Set a height for the slider */
+  margin: 10px 0; /* Adjust margin as needed */
+}
+
+span {
+  display: block;
+  margin-top: 10px;
+}
+
+.no-information-box {
+  background: rgba(183, 28, 28, 0.4);
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #b71d1c;
+}
+
+.data-no-information {
+  margin-top: 0;
+  padding: 50px 500px;
+}

@@ -1,0 +1,87 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #b71d1c;
+  min-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1px + 2vmin);
+  color: #ffffff
+}
+
+.dropzone-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Make the container take the remaining space */
+  width: 100%;
+  margin-top: 10vh; /* Push the dropzone down to be below the header */
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 500px;
+  width: 500px;
+  padding: 2rem;
+  /* margin: 0 auto; Center the dropzone within its container */
+  border-radius: 20px;
+  border: 5px solid rgb(39, 40, 33);
+  background-color: rgba(39, 40, 33, 0.3);
+  color: rgb(39, 40, 33)
+}
+
+.button-container {
+  margin-top: 1rem; /* Add some space above the buttons */
+}
+
+.button-accept {
+  background-color: #31b71c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 5px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button-cancel {
+  background-color: #b71d1c; /* Red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button-select {
+  background-color:rgb(39, 40, 33); /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+

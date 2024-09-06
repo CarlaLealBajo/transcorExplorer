@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #ffffff;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+
+
+.select-container {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.select-group {
+  margin-bottom: 10px;
+}
+
+.pane {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.top-pane,
+.bottom-pane {
+  background-color: #ffffff;
+}
+
+.matrix-plot,
+.split-pane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-pane {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  overflow-y: auto;
+}
+
+.right-pane {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.statistics {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 720px;
+  overflow-y: auto;
+}
+
+.stats-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  background-color: #5a5a5a;
+  flex-shrink: 0;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 47px;
+  height: 34px;
+  margin-bottom: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.no-information-box {
+  background: rgba(183, 28, 28, 0.4);
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #b71d1c;
+}
+
+.data-no-information {
+  margin-top: 0;
+  padding: 50px 500px;
+}
